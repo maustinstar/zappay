@@ -1,24 +1,742 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Reader Controller-->
+        <scene sceneID="YGc-xf-N9f">
+            <objects>
+                <viewController id="2sr-gD-GHH" customClass="QRReaderController" customModule="Zap_Pay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BRQ-Y9-Z0f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="3S1-jT-alD"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UxR-gP-dpS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="acV-zG-75q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="-601"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Zap_Pay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="cVc-x6-iH2">
+                                <rect key="frame" x="10" y="44" width="394" height="852"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="g89-tJ-vDR">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLA-uI-Jnl">
+                                                <rect key="frame" x="0.0" y="10.5" width="40" height="39"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Fqf-ng-yaE"/>
+                                                    <constraint firstAttribute="width" secondItem="sLA-uI-Jnl" secondAttribute="height" multiplier="1:1" id="QOl-Vj-Rqh"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <color key="tintColor" name="PrimaryColor"/>
+                                                <state key="normal" backgroundImage="person.circle.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="account:" destination="BYZ-38-t0r" eventType="touchUpInside" id="096-Od-7zi"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User's Wallet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6AH-a7-Mpi">
+                                                <rect key="frame" x="40" y="17" width="321" height="26"/>
+                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ZK-i3-7Og">
+                                                <rect key="frame" x="361" y="15.5" width="33" height="29.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="4wc-zQ-1BB"/>
+                                                    <constraint firstAttribute="width" secondItem="8ZK-i3-7Og" secondAttribute="height" multiplier="1.1:1" id="gRq-6y-u5I"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" backgroundImage="paperplane.fill" catalog="system"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="6Y8-HG-T7O"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5aY-g9-blw">
+                                        <rect key="frame" x="0.0" y="112" width="394" height="80"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="nK1-Zu-i76"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="aAs-JI-YrN">
+                                        <rect key="frame" x="0.0" y="244" width="394" height="167"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="16t-pB-fFP">
+                                                <rect key="frame" x="112" y="0.0" width="170" height="47"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5n6-6j-ZMS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="19.5" height="47"/>
+                                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="40"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80.22" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7u0-Pa-zW9">
+                                                        <rect key="frame" x="29.5" y="0.0" width="140.5" height="47"/>
+                                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="65"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="8gh-DH-N6e">
+                                                <rect key="frame" x="122" y="107" width="150" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5b-8X-Egg">
+                                                        <rect key="frame" x="0.0" y="1" width="60" height="57.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="JS7-Cc-dsx"/>
+                                                            <constraint firstAttribute="width" secondItem="Q5b-8X-Egg" secondAttribute="height" multiplier="1:1" id="ZW1-3g-ulc"/>
+                                                        </constraints>
+                                                        <color key="tintColor" name="PrimaryColor"/>
+                                                        <state key="normal" backgroundImage="qrcode" catalog="system"/>
+                                                        <connections>
+                                                            <segue destination="8om-bf-Zoc" kind="show" id="wJi-K2-Vfb"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCc-75-c8i">
+                                                        <rect key="frame" x="90" y="1" width="60" height="57.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="eCc-75-c8i" secondAttribute="height" multiplier="1:1" id="udy-gU-0ag"/>
+                                                        </constraints>
+                                                        <color key="tintColor" name="PrimaryColor"/>
+                                                        <state key="normal" backgroundImage="qrcode.viewfinder" catalog="system"/>
+                                                        <connections>
+                                                            <segue destination="2sr-gD-GHH" kind="show" id="3Bj-cB-Wnr"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="eCc-75-c8i" firstAttribute="height" secondItem="Q5b-8X-Egg" secondAttribute="height" id="Acj-W2-fvt"/>
+                                                    <constraint firstItem="eCc-75-c8i" firstAttribute="width" secondItem="eCc-75-c8i" secondAttribute="height" multiplier="1:1" id="pDK-9T-wPv"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dGn-V1-1K9">
+                                        <rect key="frame" x="0.0" y="463" width="394" height="389"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="weG-XH-hn3" customClass="ZURoundedView" customModule="zapui">
+                                        <rect key="frame" x="0.0" y="331" width="394" height="521"/>
+                                        <subviews>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DQv-ue-XKF">
+                                                <rect key="frame" x="0.0" y="32" width="394" height="489"/>
+                                                <connections>
+                                                    <segue destination="Jml-pl-RXh" kind="embed" id="vJS-jw-rWO"/>
+                                                </connections>
+                                            </containerView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q9g-k8-3wM" customClass="ZURoundedView" customModule="zapui">
+                                                <rect key="frame" x="10" y="10" width="374" height="44"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="398-Ie-spB">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqr-yf-dbS">
+                                                                <rect key="frame" x="0.0" y="12.5" width="100" height="19"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="100" id="bNh-nU-YH7"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="16"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EH4-wF-uo6" customClass="ZURoundedView" customModule="zapui">
+                                                                <rect key="frame" x="117.5" y="12.5" width="2" height="19"/>
+                                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="2" id="Jyz-Gr-K3t"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INBOX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5X-pE-vae">
+                                                                <rect key="frame" x="137" y="12.5" width="100" height="19"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="100" id="mKJ-vu-pUi"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="16"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IwK-UK-pmK" customClass="ZURoundedView" customModule="zapui">
+                                                                <rect key="frame" x="254.5" y="12.5" width="2" height="19"/>
+                                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="2" id="KW5-ZB-D0n"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SENT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ch-ql-2CP">
+                                                                <rect key="frame" x="274" y="12.5" width="100" height="19"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="100" id="zXf-cT-Thi"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="16"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" name="Subview2Color"/>
+                                                <constraints>
+                                                    <constraint firstItem="EH4-wF-uo6" firstAttribute="height" secondItem="Q9g-k8-3wM" secondAttribute="height" constant="-25" id="BxA-BC-wLM"/>
+                                                    <constraint firstItem="IwK-UK-pmK" firstAttribute="height" secondItem="Q9g-k8-3wM" secondAttribute="height" constant="-25" id="GYH-cd-n0e"/>
+                                                    <constraint firstAttribute="trailing" secondItem="398-Ie-spB" secondAttribute="trailing" id="XRt-1u-FJu"/>
+                                                    <constraint firstAttribute="height" constant="44" id="XlL-sJ-DhK"/>
+                                                    <constraint firstItem="398-Ie-spB" firstAttribute="top" secondItem="Q9g-k8-3wM" secondAttribute="top" id="i46-yr-p9c"/>
+                                                    <constraint firstAttribute="bottom" secondItem="398-Ie-spB" secondAttribute="bottom" id="vhf-Is-z4w"/>
+                                                    <constraint firstItem="398-Ie-spB" firstAttribute="leading" secondItem="Q9g-k8-3wM" secondAttribute="leading" id="zbI-CL-6HE"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="topLeftCorner" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="topRightCorner" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLeftCorner" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomRightCorner" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" name="SubviewColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="DQv-ue-XKF" secondAttribute="bottom" id="FB3-Yu-V33"/>
+                                            <constraint firstItem="Q9g-k8-3wM" firstAttribute="top" secondItem="weG-XH-hn3" secondAttribute="top" constant="10" id="Js3-Iu-zMh"/>
+                                            <constraint firstItem="DQv-ue-XKF" firstAttribute="leading" secondItem="weG-XH-hn3" secondAttribute="leading" id="LXK-ek-TIi"/>
+                                            <constraint firstItem="Q9g-k8-3wM" firstAttribute="leading" secondItem="weG-XH-hn3" secondAttribute="leading" constant="10" id="Odi-4H-4WF"/>
+                                            <constraint firstAttribute="trailing" secondItem="DQv-ue-XKF" secondAttribute="trailing" id="TLq-5u-0yf"/>
+                                            <constraint firstItem="DQv-ue-XKF" firstAttribute="top" secondItem="weG-XH-hn3" secondAttribute="top" constant="32" id="ZJA-H1-xCz"/>
+                                            <constraint firstAttribute="trailing" secondItem="Q9g-k8-3wM" secondAttribute="trailing" constant="10" id="wXg-NV-YZh"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLeftCorner" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="bottomRightCorner" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="topLeftCorner" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="topRightCorner" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="weG-XH-hn3" firstAttribute="width" secondItem="cVc-x6-iH2" secondAttribute="width" id="ngG-Vu-GpO"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="weG-XH-hn3"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cVc-x6-iH2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4Yn-3l-VKT"/>
+                            <constraint firstAttribute="bottom" secondItem="cVc-x6-iH2" secondAttribute="bottom" id="Dlm-AA-DBl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cVc-x6-iH2" secondAttribute="trailing" constant="10" id="Kbr-AQ-d3M"/>
+                            <constraint firstItem="cVc-x6-iH2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="gBd-jg-aH1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="balanceDisplay" destination="7u0-Pa-zW9" id="jnc-oj-9pa"/>
+                        <outlet property="titleLabel" destination="6AH-a7-Mpi" id="93R-qg-lcU"/>
+                        <segue destination="x4H-yi-7GJ" kind="presentation" identifier="login" modalPresentationStyle="overCurrentContext" id="h0k-BT-rkj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138" y="102"/>
+        </scene>
+        <!--Transfer Table Controller-->
+        <scene sceneID="hU0-sk-Bil">
+            <objects>
+                <tableViewController id="Jml-pl-RXh" customClass="TransferTableController" customModule="Zap_Pay" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jDH-W9-4Dt">
+                        <rect key="frame" x="0.0" y="0.0" width="394" height="489"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="SubviewColor"/>
+                        <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Lrf-xS-tKk" customClass="ZUTransferCell" customModule="Zap_Pay">
+                                <rect key="frame" x="0.0" y="28" width="394" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lrf-xS-tKk" id="xZk-72-sPY">
+                                    <rect key="frame" x="0.0" y="0.0" width="394" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Jml-pl-RXh" id="FeP-bh-dj8"/>
+                            <outlet property="delegate" destination="Jml-pl-RXh" id="I6b-aq-CB7"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rym-lF-7gE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="783" y="194"/>
+        </scene>
+        <!--Generator Controller-->
+        <scene sceneID="QfY-wu-DXT">
+            <objects>
+                <viewController id="8om-bf-Zoc" customClass="QRGeneratorController" customModule="Zap_Pay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b8C-Z2-vSX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zl3-8b-vTW">
+                                <rect key="frame" x="20" y="482" width="374" height="306"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="bw0-Gt-fBE">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="82"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sv8-Vm-cyM">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="82"/>
+                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="60"/>
+                                                <state key="normal" title="-">
+                                                    <color key="titleColor" name="PrimaryColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="decrement:" destination="8om-bf-Zoc" eventType="touchUpInside" id="Ebd-Y0-Kz0"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Rdd-kP-jic">
+                                                <rect key="frame" x="70" y="4.5" width="227" height="73"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Request" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOG-5l-bx1">
+                                                        <rect key="frame" x="76" y="0.0" width="75.5" height="26"/>
+                                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="22"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oYs-o9-H3y">
+                                                        <rect key="frame" x="78" y="31" width="71.5" height="42"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hs8-MC-rfa">
+                                                                <rect key="frame" x="0.0" y="0.0" width="11" height="42"/>
+                                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="22"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="328-z9-dT0">
+                                                                <rect key="frame" x="11" y="0.0" width="60.5" height="42"/>
+                                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="36"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gis-uc-m9K">
+                                                <rect key="frame" x="337" y="0.0" width="37" height="82"/>
+                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="60"/>
+                                                <state key="normal" title="+">
+                                                    <color key="titleColor" name="PrimaryColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="increment:" destination="8om-bf-Zoc" eventType="touchUpInside" id="Xqb-zj-f2A"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="EXD-yJ-XQR">
+                                        <rect key="frame" x="0.0" y="102" width="374" height="144"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Sca-fl-g8Z">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="33"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ww1-6B-fM0" customClass="ZURoundedButton" customModule="zapui">
+                                                        <rect key="frame" x="0.0" y="0.0" width="122" height="33"/>
+                                                        <color key="backgroundColor" name="SubviewColor"/>
+                                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="18"/>
+                                                        <color key="tintColor" name="PrimaryColor"/>
+                                                        <state key="normal" title="1"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="addDigit:" destination="8om-bf-Zoc" eventType="touchUpInside" id="zyf-k7-Xhy"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXZ-dL-INB" customClass="ZURoundedButton" customModule="zapui">
+                                                        <rect key="frame" x="126" y="0.0" width="122" height="33"/>
+                                                        <color key="backgroundColor" name="SubviewColor"/>
+                                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="18"/>
+                                                        <color key="tintColor" name="PrimaryColor"/>
+                                                        <state key="normal" title="2"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="addDigit:" destination="8om-bf-Zoc" eventType="touchUpInside" id="m7k-e9-84Q"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqo-hp-fqO" customClass="ZURoundedButton" customModule="zapui">
+                                                        <rect key="frame" x="252" y="0.0" width="122" height="33"/>
+                                                        <color key="backgroundColor" name="SubviewColor"/>
+                                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="18"/>
+                                                        <color key="tintColor" name="PrimaryColor"/>
+                                                        <state key="normal" title="3"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="addDigit:" destination="8om-bf-Zoc" eventType="touchUpInside" id="8ll-C8-LvL"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="gNX-Dt-93G">
+                                                <rect key="frame" x="0.0" y="37" width="374" height="33"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIw-M0-4b1" customClass="ZURoundedButton" customModule="zapui">
+                                                        <rect key="frame" x="0.0" y="0.0" width="122" height="33"/>
+                                                        <color key="backgroundColor" name="SubviewColor"/>
+                                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="18"/>
+                                                        <color key="tintColor" name="PrimaryColor"/>
+                                                        <state key="normal" title="4"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="addDigit:" destination="8om-bf-Zoc" eventType="touchUpInside" id="kBc-uC-vwr"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3L-DN-fJb" customClass="ZURoundedButton" customModule="zapui">
+                                                        <rect key="frame" x="126" y="0.0" width="122" height="33"/>
+                                                        <color key="backgroundColor" name="SubviewColor"/>
+                                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="18"/>
+                                                        <color key="tintColor" name="PrimaryColor"/>
+                                                        <state key="normal" title="5"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="addDigit:" destination="8om-bf-Zoc" eventType="touchUpInside" id="Y0V-nx-a3t"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uX-aD-2Lh" customClass="ZURoundedButton" customModule="zapui">
+                                                        <rect key="frame" x="252" y="0.0" width="122" height="33"/>
+                                                        <color key="backgroundColor" name="SubviewColor"/>
+                                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="18"/>
+                                                        <color key="tintColor" name="PrimaryColor"/>
+                                                        <state key="normal" title="6"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="addDigit:" destination="8om-bf-Zoc" eventType="touchUpInside" id="UtR-lK-PGn"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="lU9-mp-JLH">
+                                                <rect key="frame" x="0.0" y="74" width="374" height="33"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSq-DR-dUc" customClass="ZURoundedButton" customModule="zapui">
+                                                        <rect key="frame" x="0.0" y="0.0" width="122" height="33"/>
+                                                        <color key="backgroundColor" name="SubviewColor"/>
+                                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="18"/>
+                                                        <color key="tintColor" name="PrimaryColor"/>
+                                                        <state key="normal" title="7"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="addDigit:" destination="8om-bf-Zoc" eventType="touchUpInside" id="AQh-Dt-XnD"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOQ-3x-gJG" customClass="ZURoundedButton" customModule="zapui">
+                                                        <rect key="frame" x="126" y="0.0" width="122" height="33"/>
+                                                        <color key="backgroundColor" name="SubviewColor"/>
+                                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="18"/>
+                                                        <color key="tintColor" name="PrimaryColor"/>
+                                                        <state key="normal" title="8"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="addDigit:" destination="8om-bf-Zoc" eventType="touchUpInside" id="b3p-IF-Gjo"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECo-jZ-gGK" customClass="ZURoundedButton" customModule="zapui">
+                                                        <rect key="frame" x="252" y="0.0" width="122" height="33"/>
+                                                        <color key="backgroundColor" name="SubviewColor"/>
+                                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="18"/>
+                                                        <color key="tintColor" name="PrimaryColor"/>
+                                                        <state key="normal" title="9"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="addDigit:" destination="8om-bf-Zoc" eventType="touchUpInside" id="vQ2-ht-4rp"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="v0z-bx-xgg">
+                                                <rect key="frame" x="0.0" y="111" width="374" height="33"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ye-30-nzm" customClass="ZURoundedButton" customModule="zapui">
+                                                        <rect key="frame" x="0.0" y="0.0" width="122" height="33"/>
+                                                        <color key="backgroundColor" name="SubviewColor"/>
+                                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="13"/>
+                                                        <color key="tintColor" name="PrimaryColor"/>
+                                                        <state key="normal" title="CLR">
+                                                            <color key="titleColor" name="PrimaryColor"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="clearDigits:" destination="8om-bf-Zoc" eventType="touchUpInside" id="dQR-iY-zBv"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oyf-1r-sd4" customClass="ZURoundedButton" customModule="zapui">
+                                                        <rect key="frame" x="126" y="0.0" width="122" height="33"/>
+                                                        <color key="backgroundColor" name="SubviewColor"/>
+                                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="18"/>
+                                                        <color key="tintColor" name="PrimaryColor"/>
+                                                        <state key="normal" title="0"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="addDigit:" destination="8om-bf-Zoc" eventType="touchUpInside" id="4z5-5W-s9x"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5v-oo-ksc" customClass="ZURoundedButton" customModule="zapui">
+                                                        <rect key="frame" x="252" y="0.0" width="122" height="33"/>
+                                                        <color key="backgroundColor" name="SubviewColor"/>
+                                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="13"/>
+                                                        <color key="tintColor" name="PrimaryColor"/>
+                                                        <state key="normal" image="delete.left.fill" catalog="system"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="removeDigit:" destination="8om-bf-Zoc" eventType="touchUpInside" id="yXC-Jy-UNx"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="7Ye-30-nzm" firstAttribute="height" secondItem="Oyf-1r-sd4" secondAttribute="height" id="N7v-YU-Erc"/>
+                                                    <constraint firstItem="I5v-oo-ksc" firstAttribute="height" secondItem="Oyf-1r-sd4" secondAttribute="height" id="blL-Qo-Wju"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="148-7k-Zqz" customClass="ZURoundedButton" customModule="zapui">
+                                        <rect key="frame" x="0.0" y="266" width="374" height="40"/>
+                                        <color key="backgroundColor" name="PrimaryColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="D4b-fU-ref"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="17"/>
+                                        <color key="tintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <state key="normal" title="Request"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="request:" destination="8om-bf-Zoc" eventType="touchUpInside" id="r1q-vR-i9u"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dgb-Vi-eVd">
+                                <rect key="frame" x="60" y="60" width="294" height="294"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Dgb-Vi-eVd" secondAttribute="height" multiplier="1:1" id="338-op-czu"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3BL-2l-rT9" firstAttribute="trailing" secondItem="zl3-8b-vTW" secondAttribute="trailing" constant="20" id="GUW-sy-cQ4"/>
+                            <constraint firstItem="Dgb-Vi-eVd" firstAttribute="leading" secondItem="3BL-2l-rT9" secondAttribute="leading" constant="60" id="Hbb-Vd-xfg"/>
+                            <constraint firstItem="3BL-2l-rT9" firstAttribute="bottom" secondItem="zl3-8b-vTW" secondAttribute="bottom" constant="20" id="QlL-nP-2t3"/>
+                            <constraint firstItem="Dgb-Vi-eVd" firstAttribute="top" secondItem="3BL-2l-rT9" secondAttribute="top" constant="60" id="WTB-ek-5zq"/>
+                            <constraint firstItem="3BL-2l-rT9" firstAttribute="trailing" secondItem="Dgb-Vi-eVd" secondAttribute="trailing" constant="60" id="lEs-W1-65o"/>
+                            <constraint firstItem="zl3-8b-vTW" firstAttribute="leading" secondItem="3BL-2l-rT9" secondAttribute="leading" constant="20" id="u58-WU-YhU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3BL-2l-rT9"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4da-wP-tN2"/>
+                    <connections>
+                        <outlet property="qrView" destination="Dgb-Vi-eVd" id="fcm-tH-ywT"/>
+                        <outlet property="requestLabel" destination="328-z9-dT0" id="2Bw-rM-vcZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4QB-zj-ZSl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-586" y="102"/>
+        </scene>
+        <!--Login Controller-->
+        <scene sceneID="XgR-BB-wGP">
+            <objects>
+                <viewController id="x4H-yi-7GJ" customClass="LoginController" customModule="Zap_Pay" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aAN-4b-sfL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="WtV-k2-z7Z">
+                                <rect key="frame" x="20" y="144" width="374" height="542.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Zap Pay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c64-d1-Hh0">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="37.5"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tY-eJ-0Lt">
+                                        <rect key="frame" x="0.0" y="54.5" width="374" height="26"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Jane" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lsy-Zq-sGH">
+                                        <rect key="frame" x="0.0" y="97.5" width="374" height="34"/>
+                                        <color key="backgroundColor" name="SubviewColor"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" textContentType="given-name"/>
+                                        <connections>
+                                            <action selector="didEnter:" destination="x4H-yi-7GJ" eventType="editingDidEndOnExit" id="Lgm-ku-NSI"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VG6-B1-pHg">
+                                        <rect key="frame" x="0.0" y="148.5" width="374" height="26"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Doe" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A33-dU-T2s">
+                                        <rect key="frame" x="0.0" y="191.5" width="374" height="34"/>
+                                        <color key="backgroundColor" name="SubviewColor"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" textContentType="family-name"/>
+                                        <connections>
+                                            <action selector="didEnter:" destination="x4H-yi-7GJ" eventType="editingDidEndOnExit" id="MMt-1L-4fo"/>
+                                        </connections>
+                                    </textField>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zap" translatesAutoresizingMaskIntoConstraints="NO" id="zIw-Gr-TKh">
+                                        <rect key="frame" x="0.0" y="242.5" width="374" height="300"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="y4r-I4-dJE"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QN0-Nr-fHU" customClass="ZURoundedButton" customModule="zapui">
+                                <rect key="frame" x="20" y="792" width="374" height="50"/>
+                                <color key="backgroundColor" name="PrimaryColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5l9-gF-Rhg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="18"/>
+                                <color key="tintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <state key="normal" title="SUBMIT"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="submit:" destination="x4H-yi-7GJ" eventType="touchUpInside" id="2Lj-GF-OP4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="X1w-84-hJk" firstAttribute="trailing" secondItem="WtV-k2-z7Z" secondAttribute="trailing" constant="20" id="7zl-Ol-NPc"/>
+                            <constraint firstItem="WtV-k2-z7Z" firstAttribute="leading" secondItem="X1w-84-hJk" secondAttribute="leading" constant="20" id="MVQ-3O-cWd"/>
+                            <constraint firstItem="X1w-84-hJk" firstAttribute="bottom" secondItem="QN0-Nr-fHU" secondAttribute="bottom" constant="20" id="bt3-M7-Y2E"/>
+                            <constraint firstItem="QN0-Nr-fHU" firstAttribute="leading" secondItem="X1w-84-hJk" secondAttribute="leading" constant="20" id="gGs-lZ-RBt"/>
+                            <constraint firstItem="X1w-84-hJk" firstAttribute="trailing" secondItem="QN0-Nr-fHU" secondAttribute="trailing" constant="20" id="l8i-en-P0Q"/>
+                            <constraint firstItem="WtV-k2-z7Z" firstAttribute="top" secondItem="X1w-84-hJk" secondAttribute="top" constant="100" id="zjc-ze-txi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="X1w-84-hJk"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SV2-Gs-gtW"/>
+                    <connections>
+                        <outlet property="firstField" destination="Lsy-Zq-sGH" id="cM0-ak-JRt"/>
+                        <outlet property="lastField" destination="A33-dU-T2s" id="HWy-FV-5d6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uqw-wj-FGX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="797.54464285714278"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="delete.left.fill" catalog="system" width="64" height="52"/>
+        <image name="paperplane.fill" catalog="system" width="64" height="60"/>
+        <image name="person.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="qrcode" catalog="system" width="64" height="56"/>
+        <image name="qrcode.viewfinder" catalog="system" width="64" height="56"/>
+        <image name="zap" width="596" height="753"/>
+        <namedColor name="PrimaryColor">
+            <color red="0.88200002908706665" green="0.36599999666213989" blue="0.16099999845027924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Subview2Color">
+            <color red="0.30000001192092896" green="0.30000001192092896" blue="0.30000001192092896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SubviewColor">
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

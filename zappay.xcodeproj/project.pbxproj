@@ -15,6 +15,52 @@
 		F985573B236422A40005C7BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9855739236422A40005C7BD /* LaunchScreen.storyboard */; };
 		F9855746236422A40005C7BD /* zappayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9855745236422A40005C7BD /* zappayTests.swift */; };
 		F9855751236422A40005C7BD /* zappayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9855750236422A40005C7BD /* zappayUITests.swift */; };
+		F98557652364231F0005C7BD /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98557642364231F0005C7BD /* Messages.framework */; };
+		F98557682364231F0005C7BD /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98557672364231F0005C7BD /* MessagesViewController.swift */; };
+		F985576B2364231F0005C7BD /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F98557692364231F0005C7BD /* MainInterface.storyboard */; };
+		F985576D236423200005C7BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F985576C236423200005C7BD /* Assets.xcassets */; };
+		F9855771236423200005C7BD /* Zap.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F98557622364231F0005C7BD /* Zap.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F9855784236423550005C7BD /* zapwallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F985577B236423550005C7BD /* zapwallet.framework */; };
+		F985578B236423550005C7BD /* zapwalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F985578A236423550005C7BD /* zapwalletTests.swift */; };
+		F985578D236423550005C7BD /* zapwallet.h in Headers */ = {isa = PBXBuildFile; fileRef = F985577D236423550005C7BD /* zapwallet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9855790236423550005C7BD /* zapwallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F985577B236423550005C7BD /* zapwallet.framework */; };
+		F9855791236423550005C7BD /* zapwallet.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F985577B236423550005C7BD /* zapwallet.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F985579A236423740005C7BD /* ZWUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9855799236423740005C7BD /* ZWUser.swift */; };
+		F985579C236423D30005C7BD /* ZWTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F985579B236423D30005C7BD /* ZWTransfer.swift */; };
+		F985579E2364249F0005C7BD /* ZWTransferStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F985579D2364249F0005C7BD /* ZWTransferStatus.swift */; };
+		F98557A0236425560005C7BD /* ZWTransferOriginator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F985579F236425560005C7BD /* ZWTransferOriginator.swift */; };
+		F98557A2236425C30005C7BD /* ZWPartyTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98557A1236425C30005C7BD /* ZWPartyTransfer.swift */; };
+		F98557A4236426420005C7BD /* Transferable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98557A3236426420005C7BD /* Transferable.swift */; };
+		F98557A6236427540005C7BD /* ZWWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98557A5236427540005C7BD /* ZWWallet.swift */; };
+		F98557B52364280C0005C7BD /* zapui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98557AC2364280C0005C7BD /* zapui.framework */; };
+		F98557BC2364280C0005C7BD /* zapuiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98557BB2364280C0005C7BD /* zapuiTests.swift */; };
+		F98557BE2364280C0005C7BD /* zapui.h in Headers */ = {isa = PBXBuildFile; fileRef = F98557AE2364280C0005C7BD /* zapui.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F98557C12364280C0005C7BD /* zapui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98557AC2364280C0005C7BD /* zapui.framework */; };
+		F98557C22364280C0005C7BD /* zapui.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F98557AC2364280C0005C7BD /* zapui.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F98557CF23642D5F0005C7BD /* TransferTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98557CD23642D5F0005C7BD /* TransferTableController.swift */; };
+		F98557D223642FF70005C7BD /* ZURoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98557D123642FF70005C7BD /* ZURoundedView.swift */; };
+		F98557D923643D480005C7BD /* ZUTransferCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98557D5236438580005C7BD /* ZUTransferCell.swift */; };
+		F98557DC23643DD50005C7BD /* ZUTransferCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F98557DB23643DD50005C7BD /* ZUTransferCell.xib */; };
+		F98557DE236492760005C7BD /* ZWServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98557DD236492760005C7BD /* ZWServer.swift */; };
+		F98557E0236499580005C7BD /* ZWQRImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98557DF236499580005C7BD /* ZWQRImage.swift */; };
+		F98557E22364A3810005C7BD /* ZURoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98557E12364A3810005C7BD /* ZURoundedButton.swift */; };
+		F98557FC2364C9CE0005C7BD /* AssetSpec.rb in Resources */ = {isa = PBXBuildFile; fileRef = F98557F62364C9CE0005C7BD /* AssetSpec.rb */; };
+		F98557FD2364C9CE0005C7BD /* generateAssests.sh in Resources */ = {isa = PBXBuildFile; fileRef = F98557F72364C9CE0005C7BD /* generateAssests.sh */; };
+		F98557FE2364C9CE0005C7BD /* sips.rb in Resources */ = {isa = PBXBuildFile; fileRef = F98557F92364C9CE0005C7BD /* sips.rb */; };
+		F98557FF2364C9CE0005C7BD /* find_largest.rb in Resources */ = {isa = PBXBuildFile; fileRef = F98557FA2364C9CE0005C7BD /* find_largest.rb */; };
+		F98558002364C9CE0005C7BD /* files.rb in Resources */ = {isa = PBXBuildFile; fileRef = F98557FB2364C9CE0005C7BD /* files.rb */; };
+		F98558022364F7640005C7BD /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98558012364F7640005C7BD /* LoginController.swift */; };
+		F9855803236536A30005C7BD /* ZWUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9855799236423740005C7BD /* ZWUser.swift */; };
+		F9855804236536A30005C7BD /* ZWServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98557DD236492760005C7BD /* ZWServer.swift */; };
+		F9855805236536A30005C7BD /* ZWWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98557A5236427540005C7BD /* ZWWallet.swift */; };
+		F9855806236536A30005C7BD /* ZWTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F985579B236423D30005C7BD /* ZWTransfer.swift */; };
+		F9855807236536A30005C7BD /* Transferable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98557A3236426420005C7BD /* Transferable.swift */; };
+		F9855808236536A30005C7BD /* ZWPartyTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98557A1236425C30005C7BD /* ZWPartyTransfer.swift */; };
+		F9855809236536A30005C7BD /* ZWTransferStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F985579D2364249F0005C7BD /* ZWTransferStatus.swift */; };
+		F985580A236536A30005C7BD /* ZWTransferOriginator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F985579F236425560005C7BD /* ZWTransferOriginator.swift */; };
+		F985580D23654CF80005C7BD /* ZURoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98557E12364A3810005C7BD /* ZURoundedButton.swift */; };
+		F9CD0BB1236587CE00BD5105 /* QRGeneratorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CD0BB0236587CE00BD5105 /* QRGeneratorController.swift */; };
+		F9CD0BB323658C6C00BD5105 /* QRReaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CD0BB223658C6C00BD5105 /* QRReaderController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,10 +78,85 @@
 			remoteGlobalIDString = F985572A236422A30005C7BD;
 			remoteInfo = zappay;
 		};
+		F985576F236423200005C7BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9855723236422A30005C7BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F98557612364231F0005C7BD;
+			remoteInfo = zapmessage;
+		};
+		F9855785236423550005C7BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9855723236422A30005C7BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F985577A236423550005C7BD;
+			remoteInfo = zapwallet;
+		};
+		F9855787236423550005C7BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9855723236422A30005C7BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F985572A236422A30005C7BD;
+			remoteInfo = zappay;
+		};
+		F985578E236423550005C7BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9855723236422A30005C7BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F985577A236423550005C7BD;
+			remoteInfo = zapwallet;
+		};
+		F98557B62364280C0005C7BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9855723236422A30005C7BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F98557AB2364280C0005C7BD;
+			remoteInfo = zapui;
+		};
+		F98557B82364280C0005C7BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9855723236422A30005C7BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F985572A236422A30005C7BD;
+			remoteInfo = zappay;
+		};
+		F98557BF2364280C0005C7BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9855723236422A30005C7BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F98557AB2364280C0005C7BD;
+			remoteInfo = zapui;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F9855775236423200005C7BD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F9855771236423200005C7BD /* Zap.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9855795236423550005C7BD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F98557C22364280C0005C7BD /* zapui.framework in Embed Frameworks */,
+				F9855791236423550005C7BD /* zapwallet.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		F985572B236422A30005C7BD /* zappay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zappay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F985572B236422A30005C7BD /* Zap Pay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zap Pay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F985572E236422A30005C7BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9855730236422A30005C7BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F9855732236422A30005C7BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +170,48 @@
 		F985574C236422A40005C7BD /* zappayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zappayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9855750236422A40005C7BD /* zappayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zappayUITests.swift; sourceTree = "<group>"; };
 		F9855752236422A40005C7BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F98557622364231F0005C7BD /* Zap.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Zap.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F98557642364231F0005C7BD /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		F98557672364231F0005C7BD /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		F985576A2364231F0005C7BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		F985576C236423200005C7BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F985576E236423200005C7BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F985577B236423550005C7BD /* zapwallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = zapwallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F985577D236423550005C7BD /* zapwallet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zapwallet.h; sourceTree = "<group>"; };
+		F985577E236423550005C7BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9855783236423550005C7BD /* zapwalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zapwalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F985578A236423550005C7BD /* zapwalletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zapwalletTests.swift; sourceTree = "<group>"; };
+		F985578C236423550005C7BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9855799236423740005C7BD /* ZWUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZWUser.swift; sourceTree = "<group>"; };
+		F985579B236423D30005C7BD /* ZWTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZWTransfer.swift; sourceTree = "<group>"; };
+		F985579D2364249F0005C7BD /* ZWTransferStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZWTransferStatus.swift; sourceTree = "<group>"; };
+		F985579F236425560005C7BD /* ZWTransferOriginator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZWTransferOriginator.swift; sourceTree = "<group>"; };
+		F98557A1236425C30005C7BD /* ZWPartyTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZWPartyTransfer.swift; sourceTree = "<group>"; };
+		F98557A3236426420005C7BD /* Transferable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transferable.swift; sourceTree = "<group>"; };
+		F98557A5236427540005C7BD /* ZWWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZWWallet.swift; sourceTree = "<group>"; };
+		F98557AC2364280C0005C7BD /* zapui.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = zapui.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F98557AE2364280C0005C7BD /* zapui.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zapui.h; sourceTree = "<group>"; };
+		F98557AF2364280C0005C7BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F98557B42364280C0005C7BD /* zapuiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zapuiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F98557BB2364280C0005C7BD /* zapuiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zapuiTests.swift; sourceTree = "<group>"; };
+		F98557BD2364280C0005C7BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F98557CD23642D5F0005C7BD /* TransferTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferTableController.swift; sourceTree = "<group>"; };
+		F98557D123642FF70005C7BD /* ZURoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZURoundedView.swift; sourceTree = "<group>"; };
+		F98557D5236438580005C7BD /* ZUTransferCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZUTransferCell.swift; sourceTree = "<group>"; };
+		F98557DB23643DD50005C7BD /* ZUTransferCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZUTransferCell.xib; sourceTree = "<group>"; };
+		F98557DD236492760005C7BD /* ZWServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZWServer.swift; sourceTree = "<group>"; };
+		F98557DF236499580005C7BD /* ZWQRImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZWQRImage.swift; sourceTree = "<group>"; };
+		F98557E12364A3810005C7BD /* ZURoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZURoundedButton.swift; sourceTree = "<group>"; };
+		F98557F62364C9CE0005C7BD /* AssetSpec.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = AssetSpec.rb; sourceTree = "<group>"; };
+		F98557F72364C9CE0005C7BD /* generateAssests.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = generateAssests.sh; sourceTree = "<group>"; };
+		F98557F92364C9CE0005C7BD /* sips.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = sips.rb; sourceTree = "<group>"; };
+		F98557FA2364C9CE0005C7BD /* find_largest.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = find_largest.rb; sourceTree = "<group>"; };
+		F98557FB2364C9CE0005C7BD /* files.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = files.rb; sourceTree = "<group>"; };
+		F98558012364F7640005C7BD /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		F985580B23653F860005C7BD /* Zap Pay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Zap Pay.entitlements"; sourceTree = "<group>"; };
+		F985580C236540150005C7BD /* zapmessage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = zapmessage.entitlements; sourceTree = "<group>"; };
+		F9CD0BB0236587CE00BD5105 /* QRGeneratorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRGeneratorController.swift; sourceTree = "<group>"; };
+		F9CD0BB223658C6C00BD5105 /* QRReaderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRReaderController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +219,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F98557C12364280C0005C7BD /* zapui.framework in Frameworks */,
+				F9855790236423550005C7BD /* zapwallet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +238,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F985575F2364231F0005C7BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F98557652364231F0005C7BD /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9855778236423550005C7BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9855780236423550005C7BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9855784236423550005C7BD /* zapwallet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F98557A92364280C0005C7BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F98557B12364280C0005C7BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F98557B52364280C0005C7BD /* zapui.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +285,12 @@
 				F985572D236422A30005C7BD /* zappay */,
 				F9855744236422A40005C7BD /* zappayTests */,
 				F985574F236422A40005C7BD /* zappayUITests */,
+				F98557662364231F0005C7BD /* zapmessage */,
+				F985577C236423550005C7BD /* zapwallet */,
+				F9855789236423550005C7BD /* zapwalletTests */,
+				F98557AD2364280C0005C7BD /* zapui */,
+				F98557BA2364280C0005C7BD /* zapuiTests */,
+				F98557632364231F0005C7BD /* Frameworks */,
 				F985572C236422A30005C7BD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,9 +298,14 @@
 		F985572C236422A30005C7BD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F985572B236422A30005C7BD /* zappay.app */,
+				F985572B236422A30005C7BD /* Zap Pay.app */,
 				F9855741236422A40005C7BD /* zappayTests.xctest */,
 				F985574C236422A40005C7BD /* zappayUITests.xctest */,
+				F98557622364231F0005C7BD /* Zap.appex */,
+				F985577B236423550005C7BD /* zapwallet.framework */,
+				F9855783236423550005C7BD /* zapwalletTests.xctest */,
+				F98557AC2364280C0005C7BD /* zapui.framework */,
+				F98557B42364280C0005C7BD /* zapuiTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,10 +313,20 @@
 		F985572D236422A30005C7BD /* zappay */ = {
 			isa = PBXGroup;
 			children = (
+				F985580B23653F860005C7BD /* Zap Pay.entitlements */,
+				F98557F62364C9CE0005C7BD /* AssetSpec.rb */,
+				F98557F72364C9CE0005C7BD /* generateAssests.sh */,
+				F98557F82364C9CE0005C7BD /* utils */,
 				F985572E236422A30005C7BD /* AppDelegate.swift */,
 				F9855730236422A30005C7BD /* SceneDelegate.swift */,
 				F9855732236422A30005C7BD /* ViewController.swift */,
+				F9CD0BB223658C6C00BD5105 /* QRReaderController.swift */,
+				F9CD0BB0236587CE00BD5105 /* QRGeneratorController.swift */,
+				F98557D5236438580005C7BD /* ZUTransferCell.swift */,
+				F98557DB23643DD50005C7BD /* ZUTransferCell.xib */,
+				F98557CD23642D5F0005C7BD /* TransferTableController.swift */,
 				F9855734236422A30005C7BD /* Main.storyboard */,
+				F98558012364F7640005C7BD /* LoginController.swift */,
 				F9855737236422A30005C7BD /* Assets.xcassets */,
 				F9855739236422A40005C7BD /* LaunchScreen.storyboard */,
 				F985573C236422A40005C7BD /* Info.plist */,
@@ -128,7 +352,103 @@
 			path = zappayUITests;
 			sourceTree = "<group>";
 		};
+		F98557632364231F0005C7BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F98557642364231F0005C7BD /* Messages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F98557662364231F0005C7BD /* zapmessage */ = {
+			isa = PBXGroup;
+			children = (
+				F985580C236540150005C7BD /* zapmessage.entitlements */,
+				F98557672364231F0005C7BD /* MessagesViewController.swift */,
+				F98557692364231F0005C7BD /* MainInterface.storyboard */,
+				F985576C236423200005C7BD /* Assets.xcassets */,
+				F985576E236423200005C7BD /* Info.plist */,
+			);
+			path = zapmessage;
+			sourceTree = "<group>";
+		};
+		F985577C236423550005C7BD /* zapwallet */ = {
+			isa = PBXGroup;
+			children = (
+				F985577D236423550005C7BD /* zapwallet.h */,
+				F9855799236423740005C7BD /* ZWUser.swift */,
+				F98557DD236492760005C7BD /* ZWServer.swift */,
+				F98557A5236427540005C7BD /* ZWWallet.swift */,
+				F985579B236423D30005C7BD /* ZWTransfer.swift */,
+				F98557A3236426420005C7BD /* Transferable.swift */,
+				F98557A1236425C30005C7BD /* ZWPartyTransfer.swift */,
+				F985579D2364249F0005C7BD /* ZWTransferStatus.swift */,
+				F985579F236425560005C7BD /* ZWTransferOriginator.swift */,
+				F985577E236423550005C7BD /* Info.plist */,
+			);
+			path = zapwallet;
+			sourceTree = "<group>";
+		};
+		F9855789236423550005C7BD /* zapwalletTests */ = {
+			isa = PBXGroup;
+			children = (
+				F985578A236423550005C7BD /* zapwalletTests.swift */,
+				F985578C236423550005C7BD /* Info.plist */,
+			);
+			path = zapwalletTests;
+			sourceTree = "<group>";
+		};
+		F98557AD2364280C0005C7BD /* zapui */ = {
+			isa = PBXGroup;
+			children = (
+				F98557AE2364280C0005C7BD /* zapui.h */,
+				F98557D123642FF70005C7BD /* ZURoundedView.swift */,
+				F98557E12364A3810005C7BD /* ZURoundedButton.swift */,
+				F98557DF236499580005C7BD /* ZWQRImage.swift */,
+				F98557AF2364280C0005C7BD /* Info.plist */,
+			);
+			path = zapui;
+			sourceTree = "<group>";
+		};
+		F98557BA2364280C0005C7BD /* zapuiTests */ = {
+			isa = PBXGroup;
+			children = (
+				F98557BB2364280C0005C7BD /* zapuiTests.swift */,
+				F98557BD2364280C0005C7BD /* Info.plist */,
+			);
+			path = zapuiTests;
+			sourceTree = "<group>";
+		};
+		F98557F82364C9CE0005C7BD /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				F98557F92364C9CE0005C7BD /* sips.rb */,
+				F98557FA2364C9CE0005C7BD /* find_largest.rb */,
+				F98557FB2364C9CE0005C7BD /* files.rb */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F9855776236423550005C7BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F985578D236423550005C7BD /* zapwallet.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F98557A72364280C0005C7BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F98557BE2364280C0005C7BD /* zapui.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		F985572A236422A30005C7BD /* zappay */ = {
@@ -138,14 +458,19 @@
 				F9855727236422A30005C7BD /* Sources */,
 				F9855728236422A30005C7BD /* Frameworks */,
 				F9855729236422A30005C7BD /* Resources */,
+				F9855775236423200005C7BD /* Embed App Extensions */,
+				F9855795236423550005C7BD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F9855770236423200005C7BD /* PBXTargetDependency */,
+				F985578F236423550005C7BD /* PBXTargetDependency */,
+				F98557C02364280C0005C7BD /* PBXTargetDependency */,
 			);
 			name = zappay;
 			productName = zappay;
-			productReference = F985572B236422A30005C7BD /* zappay.app */;
+			productReference = F985572B236422A30005C7BD /* Zap Pay.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F9855740236422A40005C7BD /* zappayTests */ = {
@@ -184,6 +509,97 @@
 			productReference = F985574C236422A40005C7BD /* zappayUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		F98557612364231F0005C7BD /* zapmessage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9855772236423200005C7BD /* Build configuration list for PBXNativeTarget "zapmessage" */;
+			buildPhases = (
+				F985575E2364231F0005C7BD /* Sources */,
+				F985575F2364231F0005C7BD /* Frameworks */,
+				F98557602364231F0005C7BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = zapmessage;
+			productName = zapmessage;
+			productReference = F98557622364231F0005C7BD /* Zap.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
+		F985577A236423550005C7BD /* zapwallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9855792236423550005C7BD /* Build configuration list for PBXNativeTarget "zapwallet" */;
+			buildPhases = (
+				F9855776236423550005C7BD /* Headers */,
+				F9855777236423550005C7BD /* Sources */,
+				F9855778236423550005C7BD /* Frameworks */,
+				F9855779236423550005C7BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = zapwallet;
+			productName = zapwallet;
+			productReference = F985577B236423550005C7BD /* zapwallet.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F9855782236423550005C7BD /* zapwalletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9855796236423550005C7BD /* Build configuration list for PBXNativeTarget "zapwalletTests" */;
+			buildPhases = (
+				F985577F236423550005C7BD /* Sources */,
+				F9855780236423550005C7BD /* Frameworks */,
+				F9855781236423550005C7BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9855786236423550005C7BD /* PBXTargetDependency */,
+				F9855788236423550005C7BD /* PBXTargetDependency */,
+			);
+			name = zapwalletTests;
+			productName = zapwalletTests;
+			productReference = F9855783236423550005C7BD /* zapwalletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F98557AB2364280C0005C7BD /* zapui */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F98557C32364280C0005C7BD /* Build configuration list for PBXNativeTarget "zapui" */;
+			buildPhases = (
+				F98557A72364280C0005C7BD /* Headers */,
+				F98557A82364280C0005C7BD /* Sources */,
+				F98557A92364280C0005C7BD /* Frameworks */,
+				F98557AA2364280C0005C7BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = zapui;
+			productName = zapui;
+			productReference = F98557AC2364280C0005C7BD /* zapui.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F98557B32364280C0005C7BD /* zapuiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F98557C62364280C0005C7BD /* Build configuration list for PBXNativeTarget "zapuiTests" */;
+			buildPhases = (
+				F98557B02364280C0005C7BD /* Sources */,
+				F98557B12364280C0005C7BD /* Frameworks */,
+				F98557B22364280C0005C7BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F98557B72364280C0005C7BD /* PBXTargetDependency */,
+				F98557B92364280C0005C7BD /* PBXTargetDependency */,
+			);
+			name = zapuiTests;
+			productName = zapuiTests;
+			productReference = F98557B42364280C0005C7BD /* zapuiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,6 +621,25 @@
 						CreatedOnToolsVersion = 11.1;
 						TestTargetID = F985572A236422A30005C7BD;
 					};
+					F98557612364231F0005C7BD = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					F985577A236423550005C7BD = {
+						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
+					};
+					F9855782236423550005C7BD = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = F985572A236422A30005C7BD;
+					};
+					F98557AB2364280C0005C7BD = {
+						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
+					};
+					F98557B32364280C0005C7BD = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = F985572A236422A30005C7BD;
+					};
 				};
 			};
 			buildConfigurationList = F9855726236422A30005C7BD /* Build configuration list for PBXProject "zappay" */;
@@ -223,6 +658,11 @@
 				F985572A236422A30005C7BD /* zappay */,
 				F9855740236422A40005C7BD /* zappayTests */,
 				F985574B236422A40005C7BD /* zappayUITests */,
+				F98557612364231F0005C7BD /* zapmessage */,
+				F985577A236423550005C7BD /* zapwallet */,
+				F9855782236423550005C7BD /* zapwalletTests */,
+				F98557AB2364280C0005C7BD /* zapui */,
+				F98557B32364280C0005C7BD /* zapuiTests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,8 +673,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F985573B236422A40005C7BD /* LaunchScreen.storyboard in Resources */,
+				F98557FE2364C9CE0005C7BD /* sips.rb in Resources */,
 				F9855738236422A30005C7BD /* Assets.xcassets in Resources */,
+				F98557FF2364C9CE0005C7BD /* find_largest.rb in Resources */,
+				F98557FD2364C9CE0005C7BD /* generateAssests.sh in Resources */,
+				F98558002364C9CE0005C7BD /* files.rb in Resources */,
 				F9855736236422A30005C7BD /* Main.storyboard in Resources */,
+				F98557FC2364C9CE0005C7BD /* AssetSpec.rb in Resources */,
+				F98557DC23643DD50005C7BD /* ZUTransferCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +698,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F98557602364231F0005C7BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F985576D236423200005C7BD /* Assets.xcassets in Resources */,
+				F985576B2364231F0005C7BD /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9855779236423550005C7BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9855781236423550005C7BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F98557AA2364280C0005C7BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F98557B22364280C0005C7BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -260,6 +743,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9855733236422A30005C7BD /* ViewController.swift in Sources */,
+				F98558022364F7640005C7BD /* LoginController.swift in Sources */,
+				F98557CF23642D5F0005C7BD /* TransferTableController.swift in Sources */,
+				F9CD0BB1236587CE00BD5105 /* QRGeneratorController.swift in Sources */,
+				F98557D923643D480005C7BD /* ZUTransferCell.swift in Sources */,
+				F9CD0BB323658C6C00BD5105 /* QRReaderController.swift in Sources */,
 				F985572F236422A30005C7BD /* AppDelegate.swift in Sources */,
 				F9855731236422A30005C7BD /* SceneDelegate.swift in Sources */,
 			);
@@ -281,6 +769,64 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F985575E2364231F0005C7BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9855807236536A30005C7BD /* Transferable.swift in Sources */,
+				F985580A236536A30005C7BD /* ZWTransferOriginator.swift in Sources */,
+				F9855808236536A30005C7BD /* ZWPartyTransfer.swift in Sources */,
+				F9855806236536A30005C7BD /* ZWTransfer.swift in Sources */,
+				F9855809236536A30005C7BD /* ZWTransferStatus.swift in Sources */,
+				F98557682364231F0005C7BD /* MessagesViewController.swift in Sources */,
+				F9855804236536A30005C7BD /* ZWServer.swift in Sources */,
+				F9855803236536A30005C7BD /* ZWUser.swift in Sources */,
+				F9855805236536A30005C7BD /* ZWWallet.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9855777236423550005C7BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F98557A4236426420005C7BD /* Transferable.swift in Sources */,
+				F98557DE236492760005C7BD /* ZWServer.swift in Sources */,
+				F985579A236423740005C7BD /* ZWUser.swift in Sources */,
+				F98557A0236425560005C7BD /* ZWTransferOriginator.swift in Sources */,
+				F985580D23654CF80005C7BD /* ZURoundedButton.swift in Sources */,
+				F985579C236423D30005C7BD /* ZWTransfer.swift in Sources */,
+				F985579E2364249F0005C7BD /* ZWTransferStatus.swift in Sources */,
+				F98557A2236425C30005C7BD /* ZWPartyTransfer.swift in Sources */,
+				F98557A6236427540005C7BD /* ZWWallet.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F985577F236423550005C7BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F985578B236423550005C7BD /* zapwalletTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F98557A82364280C0005C7BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F98557D223642FF70005C7BD /* ZURoundedView.swift in Sources */,
+				F98557E22364A3810005C7BD /* ZURoundedButton.swift in Sources */,
+				F98557E0236499580005C7BD /* ZWQRImage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F98557B02364280C0005C7BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F98557BC2364280C0005C7BD /* zapuiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,6 +839,41 @@
 			isa = PBXTargetDependency;
 			target = F985572A236422A30005C7BD /* zappay */;
 			targetProxy = F985574D236422A40005C7BD /* PBXContainerItemProxy */;
+		};
+		F9855770236423200005C7BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F98557612364231F0005C7BD /* zapmessage */;
+			targetProxy = F985576F236423200005C7BD /* PBXContainerItemProxy */;
+		};
+		F9855786236423550005C7BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F985577A236423550005C7BD /* zapwallet */;
+			targetProxy = F9855785236423550005C7BD /* PBXContainerItemProxy */;
+		};
+		F9855788236423550005C7BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F985572A236422A30005C7BD /* zappay */;
+			targetProxy = F9855787236423550005C7BD /* PBXContainerItemProxy */;
+		};
+		F985578F236423550005C7BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F985577A236423550005C7BD /* zapwallet */;
+			targetProxy = F985578E236423550005C7BD /* PBXContainerItemProxy */;
+		};
+		F98557B72364280C0005C7BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F98557AB2364280C0005C7BD /* zapui */;
+			targetProxy = F98557B62364280C0005C7BD /* PBXContainerItemProxy */;
+		};
+		F98557B92364280C0005C7BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F985572A236422A30005C7BD /* zappay */;
+			targetProxy = F98557B82364280C0005C7BD /* PBXContainerItemProxy */;
+		};
+		F98557C02364280C0005C7BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F98557AB2364280C0005C7BD /* zapui */;
+			targetProxy = F98557BF2364280C0005C7BD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -311,6 +892,14 @@
 				F985573A236422A40005C7BD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F98557692364231F0005C7BD /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F985576A2364231F0005C7BD /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -433,7 +1022,9 @@
 		F9855756236422A40005C7BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "zappay/Zap Pay.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NB4XDB925U;
 				INFOPLIST_FILE = zappay/Info.plist;
@@ -441,17 +1032,20 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = " ";
 				PRODUCT_BUNDLE_IDENTIFIER = com.UITest.zappay;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Zap Pay";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		F9855757236422A40005C7BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "zappay/Zap Pay.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NB4XDB925U;
 				INFOPLIST_FILE = zappay/Info.plist;
@@ -459,10 +1053,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = " ";
 				PRODUCT_BUNDLE_IDENTIFIER = com.UITest.zappay;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Zap Pay";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -550,6 +1145,242 @@
 			};
 			name = Release;
 		};
+		F9855773236423200005C7BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_ENTITLEMENTS = zapmessage/zapmessage.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NB4XDB925U;
+				INFOPLIST_FILE = zapmessage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.UITest.zappay.zapmessage;
+				PRODUCT_NAME = Zap;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F9855774236423200005C7BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_ENTITLEMENTS = zapmessage/zapmessage.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NB4XDB925U;
+				INFOPLIST_FILE = zapmessage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.UITest.zappay.zapmessage;
+				PRODUCT_NAME = Zap;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F9855793236423550005C7BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = NB4XDB925U;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = zapwallet/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.UITest.zapwallet;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F9855794236423550005C7BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = NB4XDB925U;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = zapwallet/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.UITest.zapwallet;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F9855797236423550005C7BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NB4XDB925U;
+				INFOPLIST_FILE = zapwalletTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.UITest.zapwalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zappay.app/zappay";
+			};
+			name = Debug;
+		};
+		F9855798236423550005C7BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NB4XDB925U;
+				INFOPLIST_FILE = zapwalletTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.UITest.zapwalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zappay.app/zappay";
+			};
+			name = Release;
+		};
+		F98557C42364280C0005C7BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = NB4XDB925U;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = zapui/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.UITest.zapui;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F98557C52364280C0005C7BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = NB4XDB925U;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = zapui/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.UITest.zapui;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F98557C72364280C0005C7BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NB4XDB925U;
+				INFOPLIST_FILE = zapuiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.UITest.zapuiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zappay.app/zappay";
+			};
+			name = Debug;
+		};
+		F98557C82364280C0005C7BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NB4XDB925U;
+				INFOPLIST_FILE = zapuiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.UITest.zapuiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zappay.app/zappay";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -585,6 +1416,51 @@
 			buildConfigurations = (
 				F985575C236422A40005C7BD /* Debug */,
 				F985575D236422A40005C7BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9855772236423200005C7BD /* Build configuration list for PBXNativeTarget "zapmessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9855773236423200005C7BD /* Debug */,
+				F9855774236423200005C7BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9855792236423550005C7BD /* Build configuration list for PBXNativeTarget "zapwallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9855793236423550005C7BD /* Debug */,
+				F9855794236423550005C7BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9855796236423550005C7BD /* Build configuration list for PBXNativeTarget "zapwalletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9855797236423550005C7BD /* Debug */,
+				F9855798236423550005C7BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F98557C32364280C0005C7BD /* Build configuration list for PBXNativeTarget "zapui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F98557C42364280C0005C7BD /* Debug */,
+				F98557C52364280C0005C7BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F98557C62364280C0005C7BD /* Build configuration list for PBXNativeTarget "zapuiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F98557C72364280C0005C7BD /* Debug */,
+				F98557C82364280C0005C7BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
